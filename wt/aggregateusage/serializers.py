@@ -1,6 +1,5 @@
 from rest_framework import serializers
 from wt.aggregateusage.models import AggregatedDataUsage, AggregatedVoiceUsage
-from wt.usage.models import DataUsageRecord
 
 
 class AggregatedDataSerializer(serializers.ModelSerializer):
@@ -41,8 +40,7 @@ class VoiceUsageBySubscrSerializer(serializers.ModelSerializer):
 
 class SubscriptionExceededLimitSerializer(serializers.Serializer):
     id = serializers.IntegerField()
-    sprint_subscription_id_id=serializers.IntegerField()
-    att_subscription_id_id=serializers.IntegerField()
-    price=serializers.CharField()
-    usage_type=serializers.CharField()
-
+    sprint_subscription_id_id = serializers.IntegerField()
+    att_subscription_id_id = serializers.IntegerField()
+    price = serializers.CharField()
+    usage_type = serializers.CharField()

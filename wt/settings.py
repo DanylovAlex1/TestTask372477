@@ -42,8 +42,11 @@ INSTALLED_APPS = [
     'wt.purchases.apps.PurchasesConfig',
     'wt.sprint_subscriptions.apps.SprintSubscriptionsConfig',
     'wt.usage.apps.UsageConfig',
-    'wt.aggregateusage',
+
+
     'drf_yasg',
+    'wt.aggregateusage',
+
 ]
 
 MIDDLEWARE = [
